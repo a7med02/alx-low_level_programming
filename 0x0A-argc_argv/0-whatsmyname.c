@@ -9,9 +9,8 @@
  * Return: Always 0 (Success)
  */
 
-int main(int ac, char **av)
+int main(int argc __attribute__((unused)), char **av)
 {
-    (void)ac;
 
     printf("%s\n", av[0]);
 
