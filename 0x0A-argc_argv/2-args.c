@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-*main/Prints all the parameter followed. 
-*by a new line.
+* main - print the result of the multiplication.
+*followed by a new line.
 *@argc : the number of argiments.
 *@argv : the array of argiments.
 * Return: Always o.

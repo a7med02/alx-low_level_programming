@@ -3,7 +3,8 @@
 
 /**
  * main - Prints the program name, followed by a new line.
- *@argc : the number of argiments.
+ *@argc : cthe number of argiments.
+ *@argv : the array of argiments.
  * Return: Always o.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
