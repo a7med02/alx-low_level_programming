@@ -6,7 +6,7 @@
 * main - Print the result, followed by a new line.
 *@argc : the number of argiments.
 *@argv : the array of argiments.
-* Return: Always o.
+* Return: if success return o else return 1.
 */
 int main(int argc, char *argv[])
 {
