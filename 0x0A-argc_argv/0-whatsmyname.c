@@ -14,8 +14,6 @@ int main(int ac, char **av)
     (void)ac;
 
     i = 0;
-    while(av[0][i])
-        write(1, &av[0][i++], 1);
-    write(1, "\n", 1);
+    printf("%s\n", av[0]);
     return (0);
 }
