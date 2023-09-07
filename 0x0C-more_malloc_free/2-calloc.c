@@ -4,7 +4,7 @@
 * _calloc-funtion that allocate a number of byte and set it to 0.
 *@nmemb:member element of size.
 * @size:size can allocat.
-*Return: a pointer to the allocated memory 
+*Return: poiner to the address of the memory block
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
