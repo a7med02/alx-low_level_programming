@@ -2,9 +2,9 @@
 
 /**
 * _calloc-funtion that allocate a number of byte and set it to 0.
-*@nmemb: ...
-* @size: ... 
-* Return: a block of memory set it to 0 if sucsseful. 
+*@nmemb:member element of size.
+* @size:size can allocat.
+*Return: a pointer to the allocated memory 
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
