@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
-
+#include <string.h>
 /**
 * new_dog - entry point
 * @name: string from main, name of pet
@@ -18,19 +18,19 @@ if (p == NULL)
 /* Cpunting name pointer*/
 if (name == NULL)
 {
-	free(p);
-    if (owner)
-	    free(owner);
+	// free(p);
+    // if (owner)
+	//     free(owner);
 	return (NULL);
 }
 if (owner == NULL)
 {
-	free(p);
-	free(name);
+	// free(p);
+	// free(name);
 	return (NULL);
 }
-p->name = strdup(name);
+p->name = name;
 p->age = age;
-p->owner = strdup(owner);
+p->owner = owner;
 return (p);
 }
