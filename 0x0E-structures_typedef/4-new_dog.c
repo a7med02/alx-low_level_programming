@@ -37,16 +37,19 @@ p->name = strdup(name);
 if (!p->name)
 {
 	free(p);
+	free(name);
+	free(owner);
 	return (NULL);
 }
 p->age = age;
 p->owner = strdup(owner);
 if (!p->owner)
 {
+	free(p->name);
 	free(p);
+	free(owner);
+	free(name);
 	return (NULL);
 }
-free(owner);
-free(name);
 return (p);
 }
