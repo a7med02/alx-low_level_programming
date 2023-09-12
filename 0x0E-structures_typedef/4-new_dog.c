@@ -46,5 +46,7 @@ if (!p->owner)
 	free(p);
 	return (NULL);
 }
+free(owner);
+free(name);
 return (p);
 }
