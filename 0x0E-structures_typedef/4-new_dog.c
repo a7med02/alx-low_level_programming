@@ -30,6 +30,7 @@ if (!name)
 if (!owner)
 {
 	free(p);
+	free(name);
 	return (NULL);
 }
 p->name = strdup(name);
