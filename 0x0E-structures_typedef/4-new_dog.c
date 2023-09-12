@@ -31,14 +31,14 @@ if (!owner)
 	free(p);
 	return (NULL);
 }
-p->name = strdup(name);
+p->name = name;
 if (!p->name)
 {
 	free(p);
 	return (NULL);
 }
 p->age = age;
-p->owner = strdup(owner);
+p->owner = owner;
 if (!p->owner)
 {
 	free(p);
