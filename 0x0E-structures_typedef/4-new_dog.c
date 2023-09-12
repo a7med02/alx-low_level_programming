@@ -65,7 +65,6 @@ if (!name)
 if (!owner)
 {
 	free(p);
-	free(name);
 	return (NULL);
 }
 p->name = ft_strcpy(name);
