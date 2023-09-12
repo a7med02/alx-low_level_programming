@@ -19,12 +19,12 @@ if (!age || age < 0)
 	free(p);
 	return (NULL);
 }
-if (!name || *name == '\0')
+if (!name)
 {
 	free(p);
 	return (NULL);
 }
-if (!owner || *owner == '\0')
+if (!owner)
 {
 	free(p);
 	free(name);
