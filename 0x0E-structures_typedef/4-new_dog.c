@@ -23,8 +23,12 @@ if (owner == NULL)
 {
 	return (NULL);
 }
-p->name = name;
+p->name = strdup(name);
+if (!p->name)
+	return (NULL);
 p->age = age;
-p->owner = owner;
+p->owner = strdup(owner);
+if (!p->owner)
+	return (NULL);
 return (p);
 }
