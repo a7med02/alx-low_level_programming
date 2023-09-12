@@ -46,9 +46,8 @@ char *ft_strcpy(char *s)
 * @name: string from main, name of pet
 * @age: number from main, age of pet
 * @owner: string from main, owner of pet
-* Return: p
+* Return: pointer to struct.
 */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *p;
