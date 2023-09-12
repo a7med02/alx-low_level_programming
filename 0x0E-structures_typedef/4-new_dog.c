@@ -6,7 +6,7 @@
  * @name: string from main, name of pet
  * @age: number from main, age of pet
  * @owner: string from main, owner of pet
- * Return: p
+ * Return: p or null if have not a new dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
