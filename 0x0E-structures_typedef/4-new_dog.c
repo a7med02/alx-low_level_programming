@@ -19,7 +19,8 @@ if (p == NULL)
 if (name == NULL)
 {
 	free(p);
-	free(owner);
+    if (owner)
+	    free(owner);
 	return (NULL);
 }
 if (owner == NULL)
@@ -28,8 +29,8 @@ if (owner == NULL)
 	free(name);
 	return (NULL);
 }
-p->name = name;
+p->name = strdup(name);
 p->age = age;
-p->owner = owner;
+p->owner = strdup(owner);
 return (p);
 }
