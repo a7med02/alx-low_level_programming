@@ -11,6 +11,9 @@
  * @owner: Owner of the dog
  */
 
+#include <stdlib.h>
+#include <string.h>
+
 struct dog
 {
 	char *name;

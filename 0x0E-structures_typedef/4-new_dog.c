@@ -1,6 +1,4 @@
 #include "dog.h"
-#include <stdlib.h>
-#include <string.h>
 
 /**
 * new_dog - entry point
