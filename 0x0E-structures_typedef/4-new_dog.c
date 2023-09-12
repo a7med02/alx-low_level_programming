@@ -25,11 +25,12 @@ int	ft_strlen(char *s)
 */
 char *ft_strcpy(char *s)
 {
+	int i;
 	char *d = malloc(sizeof(char ) * (ft_strlen(s) + 1));
+
 	if (!d)
 		return (NULL);
-	int i = 0;
-
+	i = 0;
 	while (*s)
 	{
 		d[i] = *s;
