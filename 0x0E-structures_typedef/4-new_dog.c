@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <string.h>
+
 /**
 * new_dog - entry point
 * @name: string from main, name of pet
@@ -31,14 +32,14 @@ if (!owner)
 	free(p);
 	return (NULL);
 }
-p->name = name;
+p->name = strdup(name);
 if (!p->name)
 {
 	free(p);
 	return (NULL);
 }
 p->age = age;
-p->owner = owner;
+p->owner = strdup(owner);
 if (!p->owner)
 {
 	free(p);
