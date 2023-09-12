@@ -15,8 +15,12 @@ dog_t *p;
 p = malloc(sizeof(dog_t));
 if (p == NULL)
 	return (NULL);
-p->name = strcpy(p->name, name);
+if (!name)
+	return (NULL);
+if (!owner)
+	return (NULL);
+p->name = strdup(name);
 p->age = age;
-p->owner = strcpy(p->owner ,owner);
+p->owner = strdup(owner);
 return (p);
 }
