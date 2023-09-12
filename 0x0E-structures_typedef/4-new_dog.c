@@ -22,12 +22,12 @@ if (!age || age < 0)
 	free(p);
 	return (NULL);
 }
-if (!name)
+if (!name || *name == '\0')
 {
 	free(p);
 	return (NULL);
 }
-if (!owner)
+if (!owner || *owner == '\0')
 {
 	free(p);
 	free(name);
@@ -37,18 +37,13 @@ p->name = strdup(name);
 if (!p->name)
 {
 	free(p);
-	free(name);
-	free(owner);
 	return (NULL);
 }
 p->age = age;
 p->owner = strdup(owner);
 if (!p->owner)
 {
-	free(p->name);
 	free(p);
-	free(owner);
-	free(name);
 	return (NULL);
 }
 return (p);
