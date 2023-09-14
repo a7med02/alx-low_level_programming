@@ -7,12 +7,12 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
-    unsigned int i = 0;
-    int r = 0;
-    va_list ptr;
-    va_start(ptr, n);
-    while(i++ < n)
-        r  += va_arg(ptr, int);
-    va_end(ptr);
-    return (r);
+unsigned int i = 0;
+int r = 0;
+va_list ptr;
+va_start(ptr, n);
+while (i++ < n)
+	r  += va_arg(ptr, int);
+va_end(ptr);
+return (r);
 }
