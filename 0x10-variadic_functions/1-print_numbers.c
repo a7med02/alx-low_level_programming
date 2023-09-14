@@ -13,7 +13,7 @@ va_start(ptr, n);
 while (i++ < n)
 {
 	printf("%d", va_arg(ptr, int));
-	if (i != n)
+	if (i != n && separator != NULL)
 		printf("%s", separator);
 }
 printf("\n");
